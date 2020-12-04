@@ -23,7 +23,10 @@
 		$pesquisa = $_GET["pesquisa"];
 		switch ($pesquisa) {
 			case 'office':
-				echo "																																	<h1>Pacote Office</h1>
+				echo "
+
+				<h1>Pacote Office</h1><br>
+				<img src='img/office.png'><br>
 
 
 
@@ -36,7 +39,7 @@ Tempo e Dinheiro, são fatores que ocupam e preocupam pessoas o tempo todo na at
 Microsoft Office Essencial, apresenta a forma mais simples e rápida de aprender as principais ferramentas da Microsoft para a criação de Planilhas eletrônicas, Formatação de Textos e Criação de Apresentações com os já conhecidos e amplamente utilizados Softwares Excel, Word e Power Point.";
 				break;			
 			    case 'office':
-				echo "																																	<h1>Pacote Office</h1>
+				echo "																																				<h1>Pacote Office</h1>
 
 
 
@@ -49,7 +52,8 @@ Tempo e Dinheiro, são fatores que ocupam e preocupam pessoas o tempo todo na at
 Microsoft Office Essencial, apresenta a forma mais simples e rápida de aprender as principais ferramentas da Microsoft para a criação de Planilhas eletrônicas, Formatação de Textos e Criação de Apresentações com os já conhecidos e amplamente utilizados Softwares Excel, Word e Power Point.";
 				break;
 				case 'negocios':
-				echo "																																	<h1>Negocios digitais</h1>
+				echo "																								<h1>Negocios digitais</h1>
+							<img src='img/negocios.png'><br>
 
 
 
@@ -70,6 +74,7 @@ Se você disse sim para uma (ou todas) essas perguntas, então este curso é ide
 				echo "																																	
 
 				<h1>Marketing Digital</h1>
+				<img src='img/Ads.png'><br>
 
 
 

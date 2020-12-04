@@ -14,15 +14,74 @@
 
 	<div class="pesquisa">
 		<form method="get" action="recebe.php">
+
 			<h6>Prof. Wagner Cardoso</h6>
 			Pesquise no site: &nbsp<input type="text" name="pesquisa">
 			<input type="submit" name="enviar" value="Pesquisar">
 		</form>
 	</div>
 
+	<h2>Manual de Uso - Introdução das Aplicações utilizadas</h2>
+	<p>No item acima, vamos realizar uma pesquisa onde as informações coletadas pela caixa de texto serão enviadas por um formulário (método POST) para uma página de tratamentos denominada receb.php.<br>Lá serão coletadas as variáveis que por meio de um Switch vão perceber qual o dado coleto e vão relacionar a uma determinada resposta.<br><br> No item abaixo também haverá uma coleta de informações via formulário, porém neste momento em método POST para esconder as informações da URL.<br>Essas informações serão convertidas em variáveis que serão tratadas em uma estrutura de decisão onde caso a renda registrada seja maior ou igual a 2.000 o crédit será aprovado, caso não o crédito será rcusado.<br></p>
+
+
 	<div class="conteudo">
-		Aqui vai o primeiro conteudo<br>
-		Aqui vai o segundo conteudo<br>
+		<fieldset>
+			<legend>Calcule aqui sua Possibilidade de Credito.</legend>
+				<br><form method="post" action="credito.php">
+
+					Nome:&nbsp<input type="text" name="nome">
+					Renda: &nbsp <input type="number" name="renda">
+					<input type="submit" name="enviar" value="Calcular Credito"><br>
+					
+
+
+
+				</form><br>
+
+
+			</fieldset>
+		<br><br>
+		<h2>Introdução ao Formulário de Orçamento</h2>
+		<p>Para finalizar vamos utilizar o formulário abaixo para que seja possível realizar um orçamento de serviços.<br> Nesta simulação vamos apresentar uma opção de impressão da página de orçamentos.<br></p>
+
+
+
+		<fieldset>
+			<legend>Faça aqui um orçamento de serviços.</legend>
+				<br><form method="post" action="orcamento.php">
+
+					Data do orçamento:&nbsp <input type="date" name="data">
+					Tempo de Garantia em Meses:&nbsp <input type="number" name="garantia" min="1" max="6"><br>
+					Serviço a ser Realizado: &nbsp
+											
+
+
+
+					<select name="servico">
+
+						<option>Formatação</option>
+						<option>Troca de peças</option>
+						<option>Outros</option>
+ 
+					
+					</select>
+
+					Descriçao do aparelho:&nbsp<input type="text" name="aparelho">
+					Nome do Cliente:&nbsp<input type="text" name="cliente"><br><br>
+					<input type="submit" name="enviar" value="Visualizar Orçamento">
+
+
+
+
+				</form><br>
+
+
+			</fieldset>
+
+
+
+
 	</div>
 
 	<div class="rodape">
